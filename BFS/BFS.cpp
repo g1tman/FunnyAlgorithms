@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-void printBFS (int **edges , int n , int sv){
+void printBFS (bool **edges , int n , int sv){
     queue<int> pendingVertices;
     bool *visited = new bool [n];
     for(int i =0; i < n ; i++){
@@ -28,7 +28,7 @@ int main()
 {
     int n,e;
     cin>>n>>e;
-    int **edges = new int *[n];
+    bool **edges = new int *[n];
     for(int i = 0; i < n ; i++){
         edges[i] = new int [n];
         for(int j = 0; j < n ; j++){
